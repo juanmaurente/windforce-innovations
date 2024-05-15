@@ -6,12 +6,13 @@
 	--color-spring-green: #18ff6d;
 	--color-black-olive: #1f271b;
 	--color-light-cyan: #d4f5f5;
+	--color-yellow-highlight: #ecffd1;
 
 	font-family: 'Montserrat', sans-serif;
 }
 
 * {
-	margin: 0 auto;
+	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
@@ -29,16 +30,24 @@ body {
 	place-items: center;
 	min-width: 320px;
 	min-height: 100vh;
-	background-color: red;
 }
 
 h1 {
 	font-size: 3.2em;
 	line-height: 1.1;
+	padding: 0;
+	margin: 0;
 }
 
 .container {
 	min-width: 320px;
 	max-width: 1280px;
-	margin: 0 auto;
+}
+
+.fullWidthContainer {
+	width: 100vw;
+}
+
+.fullHeightContainer {
+	height: 100vh;
 }
