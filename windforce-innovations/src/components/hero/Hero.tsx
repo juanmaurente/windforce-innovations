@@ -1,7 +1,12 @@
 import styles from './Hero.module.css';
 import heroImage from '../../assets/jed-owen-ZdEQ_JKizsU-unsplash.jpg';
+import ActionButton from '../ActionButton/ActionButton';
 
 const Hero = () => {
+	const handleButtonClick = () => {
+		console.log('clicked...redirect to contact');
+	};
+
 	return (
 		<section id='Home' className='fullWidthContainer fullHeightContainer '>
 			<div className={styles.heroContainer}>
@@ -13,11 +18,15 @@ const Hero = () => {
 					<span className={styles.titleHighlight}>
 						Shipping Containers
 					</span>{' '}
-					<p>
-						Discover modern living with our eco-friendly containers,
-						designed for a greener, more efficient future.
-					</p>
 				</h1>
+				<p>
+					Discover modern living with our eco-friendly containers,
+					designed for a greener, more efficient future.
+				</p>
+				<ActionButton
+					textOfButton='Get in touch'
+					onClick={handleButtonClick}
+				/>
 			</div>
 		</section>
 	);

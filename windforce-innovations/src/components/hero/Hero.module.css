@@ -18,7 +18,6 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: center;
 }
 
 .heroWrapper h1 {
@@ -30,9 +29,10 @@
 }
 
 .heroWrapper p {
-	padding-top: 2rem;
-	font-size: 1.5rem;
-	letter-spacing: 0.2rem;
+	max-width: 55rem;
+	padding: 2rem 0 3rem;
+	font-size: 1.3rem;
+	letter-spacing: 0.1rem;
 	line-height: 2rem;
 }
 
@@ -45,6 +45,16 @@
 	.heroTitle h1 {
 		font-size: 3rem;
 		line-height: 4rem;
+	}
+
+	.heroWrapper {
+		padding-left: 10px;
+		height: 100%;
+		color: var(--color-light-cyan);
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 	}
 }
 
