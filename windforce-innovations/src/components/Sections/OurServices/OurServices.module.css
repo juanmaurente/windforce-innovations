@@ -1,0 +1,25 @@
+.servicesTitle {
+	margin: 5rem 2rem;
+}
+
+.servicesTitle h2 {
+	font-size: 2.4rem;
+}
+
+.gridContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+@media screen and (min-width: 1024px) {
+	.gridContainer {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.servicesTitle {
+		margin: 5rem 7rem;
+	}
+}

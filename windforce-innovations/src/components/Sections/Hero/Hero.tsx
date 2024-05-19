@@ -1,6 +1,6 @@
 import styles from './Hero.module.css';
-import heroImage from '../../assets/jed-owen-ZdEQ_JKizsU-unsplash.jpg';
-import ActionButton from '../ActionButton/ActionButton';
+import heroImage from '../../../assets/jed-owen-ZdEQ_JKizsU-unsplash.jpg';
+import ActionButton from '../../SharedComponents/ActionButton/ActionButton';
 
 const Hero = () => {
 	const handleButtonClick = () => {

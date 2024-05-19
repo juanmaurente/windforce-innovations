@@ -6,7 +6,6 @@
 	display: inline-block;
 	justify-content: center;
 	align-items: center;
-	text-transform: uppercase;
 	color: var(--color-light-cyan);
 	font-size: 1rem;
 	letter-spacing: 0.2rem;
