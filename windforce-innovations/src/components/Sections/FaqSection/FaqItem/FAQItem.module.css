@@ -1,0 +1,33 @@
+.faqQuestion {
+	border: 1px solid #3f3f3f18;
+	background-color: #3f3f3f18;
+	cursor: pointer;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1.25rem 1.5rem;
+	display: flex;
+	margin: 1rem 0;
+	font-weight: 500;
+}
+
+.faqQuestion:first-child {
+	margin-top: 0;
+}
+
+.arrow {
+	transition: transform 0.3s;
+}
+
+.rotate {
+	transform: rotate(180deg);
+}
+
+.faqAnswer {
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.5s ease-in-out;
+}
+
+.show {
+	max-height: 150px;
+}

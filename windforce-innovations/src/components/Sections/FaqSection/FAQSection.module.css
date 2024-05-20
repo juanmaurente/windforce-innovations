@@ -1,0 +1,33 @@
+.faqContainer {
+	margin-top: 5rem;
+	display: flex;
+	flex-direction: column;
+}
+
+.titleSection {
+	width: 40%;
+	text-align: left;
+	margin-right: 5rem;
+}
+
+.servicesTitle h2 {
+	font-size: 2.4rem;
+}
+
+.faqDisplay {
+	width: 100%;
+	text-align: left;
+}
+
+.faqDisplay p {
+	color: var(--color-text-neutral);
+	padding-left: 20px;
+	margin: 0 1rem;
+}
+
+
+@media screen and (min-width: 1024px) {
+	.faqContainer {
+		flex-direction: row;
+	}
+}

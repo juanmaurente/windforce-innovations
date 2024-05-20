@@ -14,7 +14,8 @@ const InfoCard = ({ title, image, description }: Props) => {
 			<div className={styles.cardInfo}>
 				<h3>{title}</h3>
 				<p>{description}</p>
-				<p>Learn more</p>
+
+				<p className={styles.learnMore}>Learn More</p>
 			</div>
 		</div>
 	);
