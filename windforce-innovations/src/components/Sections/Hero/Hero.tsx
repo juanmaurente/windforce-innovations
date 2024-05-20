@@ -8,7 +8,7 @@ const Hero = () => {
 	};
 
 	return (
-		<section id='Home' className='fullWidthContainer fullHeightContainer '>
+		<div className='fullWidthContainer fullHeightContainer '>
 			<div className={styles.heroContainer}>
 				<img src={heroImage} alt='highway with cars' />
 			</div>
@@ -28,7 +28,7 @@ const Hero = () => {
 					onClick={handleButtonClick}
 				/>
 			</div>
-		</section>
+		</div>
 	);
 };
 
