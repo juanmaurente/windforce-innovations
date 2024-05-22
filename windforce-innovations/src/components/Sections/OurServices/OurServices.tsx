@@ -1,47 +1,84 @@
 import InfoCard from '../../SharedComponents/InfoCard/InfoCard';
 import styles from './OurServices.module.css';
+import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 import photo1 from '../../../assets/container-house.webp';
 import photo2 from '../../../assets/electric-car.webp';
 import photo3 from '../../../assets/frontal-window-container.webp';
 import photo4 from '../../../assets/highway-image.webp';
 import photo5 from '../../../assets/solar-panels.webp';
+import { useRef } from 'react';
 
 const OurServices = () => {
-	return (
-		<div className='container'>
-			<div className={`sectionTitle ${styles.servicesTitle}`}>
-				<h2>The Future of Shipping Containers</h2>
-				<p>
-					Revolutionize your shipping container experience with our
-					modern solutions powered with Clean Energy Technologies.
-					<br />
-					From solar rooftops to electric vehicle charging stations,
-					we're shaping a more sustainable world.
-				</p>
-			</div>
-			<div className={styles.gridContainer}>
-				<InfoCard
-					title='Eco-Friendly Homes'
-					description='Discover our innovative container homes, designed for sustainable living.'
-					image={photo1}
-				/>
-				<InfoCard
-					title='Electric Vehicles'
-					description='Explore our electric vehicle solutions, perfect for eco-conscious transportation.'
-					image={photo2}
-				/>
+	gsap.registerPlugin(useGSAP);
+	gsap.registerPlugin(ScrollTrigger);
 
-				<InfoCard
-					title='Eco-Friendly Highways'
-					description='Experience the future of transportation with our eco-friendly highway initiatives.'
-					image={photo4}
-				/>
-				<InfoCard
-					title='Solar Power Solutions'
-					description='Harness the power of the sun with our solar panel installations for shipping containers.'
-					image={photo5}
-				/>
+	useGSAP(() => {
+		gsap.from('.sectionTitle', {
+			scrollTrigger: {
+				trigger: '.sectionTitle',
+				start: 'top 60%',
+				end: 'top 100px',
+				markers: true,
+			},
+			y: -80,
+			duration: 2,
+			opacity: 0,
+		});
+
+		gsap.from('.gridContainer', {
+			scrollTrigger: {
+				trigger: '.gridContainer',
+				start: 'top 80%',
+				end: 'top 100px',
+				markers: true,
+			},
+			delay: 1,
+			y: -20,
+			duration: 2,
+			opacity: 0,
+		});
+	});
+
+	return (
+		<div className='servicesContainer'>
+			<div className='container'>
+				<div className={`sectionTitle ${styles.servicesTitle}`}>
+					<h2>The Future of Shipping Containers</h2>
+					<p>
+						Revolutionize your shipping container experience with
+						our modern solutions powered with Clean Energy
+						Technologies.
+						<br />
+						From solar rooftops to electric vehicle charging
+						stations, we're shaping a more sustainable world.
+					</p>
+				</div>
+				<div className={`gridContainer ${styles.gridContainer}`}>
+					<InfoCard
+						title='Eco-Friendly Homes'
+						description='Discover our innovative container homes, designed for sustainable living.'
+						image={photo1}
+					/>
+					<InfoCard
+						title='Electric Vehicles'
+						description='Explore our electric vehicle solutions, perfect for eco-conscious transportation.'
+						image={photo2}
+					/>
+
+					<InfoCard
+						title='Eco-Friendly Highways'
+						description='Experience the future of transportation with our eco-friendly highway initiatives.'
+						image={photo4}
+					/>
+					<InfoCard
+						title='Solar Power Solutions'
+						description='Harness the power of the sun with our solar panel installations for shipping containers.'
+						image={photo5}
+					/>
+				</div>
 			</div>
 		</div>
 	);
