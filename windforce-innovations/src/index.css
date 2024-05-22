@@ -2,7 +2,7 @@
 	--color-black-olive: #34403a;
 	--color-cal-poly-green: #285238;
 	--color-forest-green: #138a36;
-	--color-green-success: #49bd59;
+	--color-green-success: #7fd958bd;
 	--color-spring-green: #1bc95b;
 	--color-black-olive: #1f271b;
 	--color-light-cyan: #d4f5f5;
@@ -79,7 +79,6 @@ section {
 }
 
 .sectionTitle p {
-	color: var(--color-text-neutral);
 	font-size: 1rem;
 	line-height: 1.6rem;
 }

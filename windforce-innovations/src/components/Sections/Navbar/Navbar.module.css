@@ -43,7 +43,7 @@
 }
 
 .navbarLinks ul li:last-child {
-	background-color: var(--color-forest-green);
+	background-color: var(--color-green-success);
 	border: 0;
 	border-radius: 3rem;
 	color: var(--color-light-cyan);
@@ -54,7 +54,7 @@
 
 .navbarLinks ul li:last-child:hover {
 	cursor: pointer;
-	background-color: var(--color-green-success);
+	background-color: var(--color-spring-green);
 }
 
 @media screen and (min-width: 1024px) {

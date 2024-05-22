@@ -2,9 +2,11 @@
 	width: 100%;
 	display: flex;
 	flex-direction: column;
+	transition: all 0.3s;
+	padding: 5rem 0;
 }
 
-.contactContainer img {
+.heroContainer img {
 	position: absolute;
 	z-index: -1;
 	width: 100%;
@@ -14,18 +16,23 @@
 }
 
 .titleSection {
-	width: 100%;
 	text-align: left;
 	margin: 1rem 0 1rem 10px;
 }
 
 .contactTitle h2 {
 	font-size: 2.4rem;
+	color: var(--color-light-cyan);
+}
+.contactTitle p {
+	font-size: 1rem;
+	color: #d4f5f59c;
+	font-weight: 300;
 }
 
 .contactTitle ul li {
 	margin-top: 2rem;
-	color: var(--color-text-neutral);
+	color: var(--color-light-cyan);
 	font-weight: 300;
 }
 
@@ -46,10 +53,16 @@
 textarea {
 	width: 50%;
 	border: 1px solid #3f3f3f18;
-	background-color: #3f3f3f04;
+	background-color: #c5c5c538;
 	padding: 1.25rem 1.5rem;
 	display: flex;
 	font-weight: 500;
+	color: #ffffff;
+}
+
+.formDisplay input::placeholder,
+textarea::placeholder {
+	color: #000;
 }
 
 .formDisplay p {
@@ -59,16 +72,14 @@ textarea {
 
 .sendButton {
 	width: fit-content;
-	background-color: var(--color-forest-green);
+	background-color: var(--color-green-success);
 	border: 0;
 	border-radius: 3rem;
-	color: var(--color-light-cyan);
 	transition: all 0.3s ease;
 	padding: 0.5rem 2.2rem;
 	margin-top: 2rem;
 	cursor: pointer;
 	font-size: 1rem;
-	letter-spacing: 1px;
 }
 
 .sendButton:hover {

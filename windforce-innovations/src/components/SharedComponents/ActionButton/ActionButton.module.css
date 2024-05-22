@@ -1,5 +1,5 @@
 .actionButton {
-	background-color: var(--color-forest-green);
+	background-color: var(--color-green-success);
 	border: 0;
 	padding: 1rem 2rem;
 	border-radius: 3rem;
@@ -17,7 +17,7 @@
 
 .actionButton:hover {
 	cursor: pointer;
-	background-color: var(--color-green-success);
+	background-color: var(--color-spring-green);
 }
 
 @media (min-width: 1024px) {
