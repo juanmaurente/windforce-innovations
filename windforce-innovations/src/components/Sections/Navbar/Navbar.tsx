@@ -2,7 +2,6 @@ import { useRef, useState } from 'react';
 import styles from './Navbar.module.css';
 import Hamburguer from '../../SharedComponents/Hamburguer/Hamburguer';
 import logo from '../../../assets/windforce-logo.svg';
-import ActionButton from '../../SharedComponents/ActionButton/ActionButton';
 
 interface Props {
 	onNavigate: (sectionId: string) => void;

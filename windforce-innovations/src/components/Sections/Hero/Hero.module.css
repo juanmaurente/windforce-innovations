@@ -23,9 +23,10 @@
 .heroWrapper h1 {
 	max-width: 55rem;
 	font-size: 4rem;
-	font-weight: 400;
+	font-weight: 500;
 	line-height: 5rem;
 	text-wrap: wrap;
+	text-shadow: 4px 4px 33px rgba(255, 255, 255, 0.37);
 }
 
 .heroWrapper p {

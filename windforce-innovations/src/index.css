@@ -3,7 +3,7 @@
 	--color-cal-poly-green: #285238;
 	--color-forest-green: #138a36;
 	--color-green-success: #49bd59;
-	--color-spring-green: #18ff6d;
+	--color-spring-green: #1bc95b;
 	--color-black-olive: #1f271b;
 	--color-light-cyan: #d4f5f5;
 	--color-yellow-highlight: #ecffd1;
@@ -75,6 +75,7 @@ section {
 	font-size: 1.75;
 	font-weight: 600;
 	margin-bottom: 1rem;
+	text-shadow: 4px 4px 33px rgba(0, 0, 0, 0.37);
 }
 
 .sectionTitle p {
@@ -83,6 +84,15 @@ section {
 	line-height: 1.6rem;
 }
 
+input,
+textarea {
+	font-family: 'Montserrat', sans-serif;
+	margin: 10px 0;
+}
+
+textarea {
+	height: 150px;
+}
 @media screen and (min-width: 1024px) {
 	.sectionTitle h2 {
 		font-size: 3.75rem;

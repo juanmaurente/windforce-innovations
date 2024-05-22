@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import styles from './FAQItem.module.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 
 interface Props {
