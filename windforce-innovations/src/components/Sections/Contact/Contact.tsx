@@ -1,8 +1,6 @@
 import { useForm } from 'react-hook-form';
-import ActionButton from '../../SharedComponents/ActionButton/ActionButton';
 import styles from './Contact.module.css';
 import heroImage from '../../../assets/container-beach.webp';
-import logo from '../../../assets/windforceLogo.png';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';

@@ -6,10 +6,8 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 import photo1 from '../../../assets/container-house.webp';
 import photo2 from '../../../assets/electric-car.webp';
-import photo3 from '../../../assets/frontal-window-container.webp';
 import photo4 from '../../../assets/highway-image.webp';
 import photo5 from '../../../assets/solar-panels.webp';
-import { useRef } from 'react';
 
 const OurServices = () => {
 	gsap.registerPlugin(useGSAP);

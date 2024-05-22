@@ -8,7 +8,11 @@ import Contact from './components/Sections/Contact/Contact';
 function App() {
 	return (
 		<>
-			<Navbar />
+			<Navbar
+				onNavigate={function (): void {
+					throw new Error('Function not implemented.');
+				}}
+			/>
 			<Hero />
 			<OurServices />
 			<FAQSection />
