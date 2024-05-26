@@ -17,7 +17,7 @@
 
 .titleSection {
 	text-align: left;
-	margin: 1rem 0 1rem 10px;
+	margin: 2rem 0 1rem 10px;
 }
 
 .contactTitle h2 {
@@ -84,6 +84,11 @@ textarea::placeholder {
 
 .sendButton:hover {
 	background-color: var(--color-spring-green);
+}
+
+.logo img {
+	margin-top: 3rem;
+	width: 250px;
 }
 
 @media screen and (min-width: 1024px) {

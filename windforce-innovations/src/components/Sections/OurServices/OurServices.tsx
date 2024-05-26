@@ -34,8 +34,21 @@ const OurServices = () => {
 				markers: false,
 			},
 			delay: 1,
-			y: -20,
 			duration: 2,
+			opacity: 0,
+		});
+
+		gsap.from('.gridItem', {
+			scrollTrigger: {
+				trigger: '.gridItem',
+				start: 'top 80%',
+				end: 'top 100px',
+				markers: false,
+			},
+			y: -20,
+			x: -20,
+			stagger: 0.5,
+			duration: 1,
 			opacity: 0,
 		});
 	});
@@ -55,27 +68,34 @@ const OurServices = () => {
 					</p>
 				</div>
 				<div className={`gridContainer ${styles.gridContainer}`}>
-					<InfoCard
-						title='Eco-Friendly Homes'
-						description='Discover our innovative container homes, designed for sustainable living.'
-						image={photo1}
-					/>
-					<InfoCard
-						title='Electric Vehicles'
-						description='Explore our electric vehicle solutions, perfect for eco-conscious transportation.'
-						image={photo2}
-					/>
-
-					<InfoCard
-						title='Eco-Friendly Highways'
-						description='Experience the future of transportation with our eco-friendly highway initiatives.'
-						image={photo4}
-					/>
-					<InfoCard
-						title='Solar Power Solutions'
-						description='Harness the power of the sun with our solar panel installations for shipping containers.'
-						image={photo5}
-					/>
+					<div className='gridItem'>
+						<InfoCard
+							title='Eco-Friendly Homes'
+							description='Discover our innovative container homes, designed for sustainable living.'
+							image={photo1}
+						/>
+					</div>
+					<div className='gridItem'>
+						<InfoCard
+							title='Electric Vehicles'
+							description='Explore our electric vehicle solutions, perfect for eco-conscious transportation.'
+							image={photo2}
+						/>
+					</div>
+					<div className='gridItem'>
+						<InfoCard
+							title='Eco-Friendly Highways'
+							description='Experience the future of transportation with our eco-friendly highway initiatives.'
+							image={photo4}
+						/>
+					</div>
+					<div className='gridItem'>
+						<InfoCard
+							title='Solar Power Solutions'
+							description='Harness the power of the sun with our solar panel installations for shipping containers.'
+							image={photo5}
+						/>
+					</div>
 				</div>
 			</div>
 		</div>
