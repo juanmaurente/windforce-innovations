@@ -7,13 +7,14 @@
 	padding: 10px 20px;
 	display: flex;
 	position: fixed;
-	top: 3rem;
+	top: 1rem;
 	bottom: auto;
 	left: 0%;
 	right: 0%;
 	color: var(--color-light-cyan);
 	flex-wrap: nowrap;
 	border-radius: 10rem;
+	width: 80%;
 }
 
 .logo img {
@@ -65,5 +66,9 @@
 		max-height: 100%;
 		align-items: center;
 		justify-content: center;
+	}
+
+	.navbarWrapper {
+		width: 100%;
 	}
 }
