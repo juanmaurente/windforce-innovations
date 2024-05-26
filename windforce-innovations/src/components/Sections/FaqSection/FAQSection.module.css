@@ -1,6 +1,5 @@
 .faqContainer {
-	margin: 5rem 0;
-	padding: 5rem 0;
+	margin: 4rem 0;
 	display: flex;
 	flex-direction: column;
 }
@@ -12,7 +11,13 @@
 }
 
 .servicesTitle h2 {
+	padding: 0;
+	margin-left: 10px;
 	font-size: 2.4rem;
+}
+
+.servicesTitle p {
+	margin-left: 10px;
 }
 
 .faqDisplay {
@@ -29,6 +34,7 @@
 
 @media screen and (min-width: 1024px) {
 	.faqContainer {
+		margin: 10rem 0;
 		flex-direction: row;
 	}
 
@@ -40,5 +46,13 @@
 
 	.faqDisplay {
 		width: 100%;
+	}
+
+	.servicesTitle h2 {
+		padding: 0px;
+	}
+
+	.servicesTitle p {
+		margin-left: 0px;
 	}
 }
