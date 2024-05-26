@@ -3,14 +3,14 @@
 	display: flex;
 	flex-direction: column;
 	transition: all 0.3s;
-	padding: 5rem 0;
+	padding: 2rem 0;
 }
 
 .heroContainer img {
 	position: absolute;
 	z-index: -1;
 	width: 100%;
-	height: 100%;
+	height: 150%;
 	object-fit: cover;
 	filter: brightness(0.4);
 }
@@ -51,7 +51,7 @@
 
 .formDisplay input,
 textarea {
-	width: 50%;
+	width: 80%;
 	border: 1px solid #3f3f3f18;
 	background-color: #c5c5c538;
 	padding: 1.25rem 1.5rem;
@@ -94,6 +94,7 @@ textarea::placeholder {
 @media screen and (min-width: 1024px) {
 	.contactContainer {
 		flex-direction: row-reverse;
+		padding-top: 5rem;
 	}
 
 	.titleSection {

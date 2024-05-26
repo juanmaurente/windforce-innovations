@@ -1,5 +1,5 @@
 .cardWrapper {
-	margin: 2rem 10px;
+	margin: 2rem;
 	display: flex;
 	flex-direction: row;
 	min-width: 400px;
@@ -53,13 +53,13 @@
 	padding: 0 3rem;
 }
 
-.learnMore {
+.learnMore a {
 	color: var(--color-black-olive);
 	text-decoration: underline;
 	transition: all 0.3s;
 }
 
-.learnMore:hover {
+.learnMore a:hover {
 	font-weight: 500;
 	cursor: pointer;
 }
