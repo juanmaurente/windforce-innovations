@@ -53,6 +53,33 @@ const OurServices = () => {
 		});
 	});
 
+	const infoCards = [
+		{
+			title: 'Eco-Friendly Homes',
+			description:
+				'Discover our innovative container homes, designed for sustainable living.',
+			image: photo1,
+		},
+		{
+			title: 'Electric Vehicles',
+			description:
+				'Explore our electric vehicle solutions, perfect for eco-conscious transportation.',
+			image: photo2,
+		},
+		{
+			title: 'Eco-Friendly Highways',
+			description:
+				'Experience the future of transportation with our eco-friendly highway initiatives.',
+			image: photo4,
+		},
+		{
+			title: 'Solar Power Solutions',
+			description:
+				'Harness the power of the sun with our solar panel installations for shipping containers.',
+			image: photo5,
+		},
+	];
+
 	return (
 		<div className='servicesContainer'>
 			<div className='container'>
@@ -68,34 +95,18 @@ const OurServices = () => {
 					</p>
 				</div>
 				<div className={`gridContainer ${styles.gridContainer}`}>
-					<div className='gridItem'>
-						<InfoCard
-							title='Eco-Friendly Homes'
-							description='Discover our innovative container homes, designed for sustainable living.'
-							image={photo1}
-						/>
-					</div>
-					<div className='gridItem'>
-						<InfoCard
-							title='Electric Vehicles'
-							description='Explore our electric vehicle solutions, perfect for eco-conscious transportation.'
-							image={photo2}
-						/>
-					</div>
-					<div className='gridItem'>
-						<InfoCard
-							title='Eco-Friendly Highways'
-							description='Experience the future of transportation with our eco-friendly highway initiatives.'
-							image={photo4}
-						/>
-					</div>
-					<div className='gridItem'>
-						<InfoCard
-							title='Solar Power Solutions'
-							description='Harness the power of the sun with our solar panel installations for shipping containers.'
-							image={photo5}
-						/>
-					</div>
+					{infoCards.map((card, index) => (
+						<div
+							key={index}
+							className={`gridItem ${styles.gridItem}`}>
+							<InfoCard
+								title={card.title}
+								description={card.description}
+								image={card.image}
+								index={index} // Pasar el índice a InfoCard
+							/>
+						</div>
+					))}
 				</div>
 			</div>
 		</div>
