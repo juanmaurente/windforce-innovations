@@ -38,7 +38,6 @@
 }
 
 .formDisplay {
-	width: 100%;
 	text-align: left;
 }
 
@@ -51,6 +50,7 @@
 
 .formDisplay input,
 textarea {
+	width: 80%;
 	border: 1px solid #3f3f3f18;
 	background-color: #c5c5c538;
 	padding: 1.25rem 1.5rem;
@@ -102,6 +102,7 @@ textarea::placeholder {
 	}
 
 	.formDisplay {
+		width: 70%;
 		margin-top: 1rem;
 	}
 
