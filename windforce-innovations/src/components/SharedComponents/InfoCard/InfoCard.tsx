@@ -15,7 +15,9 @@ const InfoCard = ({ title, image, description }: Props) => {
 				<h3>{title}</h3>
 				<p>{description}</p>
 
-				<p className={styles.learnMore}>Learn More</p>
+				<p className={styles.learnMore}>
+					<a href='#contact'>Learn More</a>
+				</p>
 			</div>
 		</div>
 	);
