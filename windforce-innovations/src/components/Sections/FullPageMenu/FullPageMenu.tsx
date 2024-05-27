@@ -1,7 +1,4 @@
-import { useEffect, useRef } from 'react';
 import styles from './FullPageMenu.module.css';
-import { gsap } from 'gsap/gsap-core';
-import { useGSAP } from '@gsap/react';
 
 interface Props {
 	menuOpen: boolean;
