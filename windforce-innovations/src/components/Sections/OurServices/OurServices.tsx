@@ -9,7 +9,11 @@ import photo2 from '../../../assets/electric-car.webp';
 import photo4 from '../../../assets/highway-image.webp';
 import photo5 from '../../../assets/solar-panels.webp';
 
-const OurServices = () => {
+interface Props {
+	onNavigate: (sectionId: string) => void;
+}
+
+const OurServices = ({ onNavigate }: Props) => {
 	gsap.registerPlugin(useGSAP);
 	gsap.registerPlugin(ScrollTrigger);
 
@@ -104,6 +108,7 @@ const OurServices = () => {
 								description={card.description}
 								image={card.image}
 								index={index} // Pasar el índice a InfoCard
+								onNavigate={onNavigate}
 							/>
 						</div>
 					))}

@@ -4,6 +4,7 @@ import Hamburguer from '../../SharedComponents/Hamburguer/Hamburguer';
 import logo from '../../../assets/windforceLogo.png';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
+import FullPageMenu from '../FullPageMenu/FullPageMenu';
 
 interface Props {
 	onNavigate: (sectionId: string) => void;
@@ -16,7 +17,6 @@ const Navbar = ({ onNavigate }: Props) => {
 	gsap.registerPlugin(useGSAP);
 
 	useGSAP(() => {
-		// gsap code here...
 		gsap.from('.container', {
 			delay: 1,
 			opacity: 0,
@@ -45,12 +45,12 @@ const Navbar = ({ onNavigate }: Props) => {
 					<li
 						className={styles.navItem}
 						onClick={() => onNavigate('about')}>
-						About
+						Services
 					</li>
 					<li
 						className={styles.navItem}
 						onClick={() => onNavigate('projects')}>
-						Projects
+						FAQ
 					</li>
 					<li
 						className={styles.navItem}
@@ -59,6 +59,12 @@ const Navbar = ({ onNavigate }: Props) => {
 					</li>
 				</ul>
 			</div>
+
+			<FullPageMenu
+				menuOpen={menuOpen}
+				onNavigate={onNavigate}
+				toggleMenu={toggleMenu}
+			/>
 			<Hamburguer menuOpen={menuOpen} toggleMenu={toggleMenu} />
 		</div>
 	);

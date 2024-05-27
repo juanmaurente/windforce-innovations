@@ -1,8 +1,8 @@
 .cardWrapper {
-	margin: 10px 10px;
+	margin: 10px 30px;
 	display: flex;
 	flex-direction: column;
-
+	padding-bottom: 40px;
 	box-shadow: -2px 0px 26px 20px rgba(0, 0, 0, 0.062);
 	-webkit-box-shadow: -2px 0px 26px 20px rgba(0, 0, 0, 0.062);
 	-moz-box-shadow: -2px 0px 26px 20px rgba(0, 0, 0, 0.062);
@@ -45,11 +45,11 @@
 	margin-bottom: 1rem;
 }
 
-.cardInfo > p a {
+.cardInfo > p {
 	color: var(--color-text-neutral);
 	font-size: 0.9rem;
 	line-height: 1.6rem;
-	padding: 0 3rem;
+	padding: 0.5rem 3rem;
 }
 
 .learnMore a {
@@ -61,6 +61,7 @@
 .learnMore a:hover {
 	font-weight: 500;
 	cursor: pointer;
+	color: black;
 }
 
 @media screen and (min-width: 1024px) {
@@ -68,6 +69,7 @@
 		margin: 10px;
 		flex-direction: row;
 		height: 350px;
+		padding-bottom: 0px;
 	}
 
 	.cardInfo h3 {
@@ -81,7 +83,11 @@
 	}
 
 	.cardWrapperReversed {
-		flex-direction: row;
+		flex-direction: row-reverse;
+	}
+
+	.cardImage {
+		max-width: 250px;
 	}
 	.cardImage img {
 		width: 100%;

@@ -1,0 +1,86 @@
+.menuInner {
+	position: fixed;
+	width: auto;
+	z-index: 1;
+	top: 4rem;
+	left: 0;
+	right: 0;
+	list-style: none;
+	background-color: #1f1f1ff5;
+}
+
+.menuInnerClosed {
+	display: none;
+}
+
+.mainMenu {
+	position: relative;
+	list-style: none;
+	background-color: #1f1f1fa4;
+}
+
+.mainMenuItem {
+	cursor: pointer;
+	color: #d9d9d9;
+	font-size: 1rem;
+	font-weight: 400;
+	transition: color 0.5s;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 20px 0;
+}
+
+.mainMenuItem:hover {
+	color: white;
+	background-color: rgba(128, 128, 113, 0.137);
+}
+
+/*
+
+
+.menuBg {
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+}
+
+.menuBg span {
+	height: calc(100% / 3);
+	width: 100%;
+	background-color: #232637;
+	display: block;
+}
+
+.mainMenu {
+	position: relative;
+	z-index: 10;
+	list-style: none;
+	width: 100%;
+}
+
+.mainMenu li {
+	cursor: pointer;
+	margin-top: 4rem;
+	color: #d9d9d9;
+	font-size: 4rem;
+	font-weight: 400;
+	transition: color 0.5s;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 10px;
+	width: fit-content;
+}
+
+.mainMenu li:hover {
+	color: white;
+	background-color: rgba(128, 128, 113, 0.137);
+}
+
+@media screen and (min-width: 768px) {
+	.mainMenu {
+		max-width: 1400px;
+		margin: 0 auto;
+	}
+} */

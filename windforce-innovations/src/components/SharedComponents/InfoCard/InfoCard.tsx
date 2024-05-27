@@ -5,14 +5,19 @@ interface Props {
 	image: string;
 	description: string;
 	index: number; // Añadir className como prop opcional
+	onNavigate: (sectionId: string) => void; // Añadir onNavigate como prop
 }
-const InfoCard = ({ title, image, description, index }: Props) => {
+const InfoCard = ({ title, image, description, index, onNavigate }: Props) => {
 	const isReversed = index % 2 === 1; // Determina si es el segundo o cuarto (y así sucesivamente)
+
+	const handleLearnMoreClick = () => {
+		onNavigate('contact');
+	};
 
 	return (
 		<div
 			className={`${styles.cardWrapper} ${
-				isReversed ? '' : styles.cardWrapperReversed
+				isReversed ? styles.cardWrapperReversed : ''
 			}`}>
 			<div className={styles.cardImage}>
 				<img src={image} alt={title} />
@@ -21,7 +26,7 @@ const InfoCard = ({ title, image, description, index }: Props) => {
 				<h3>{title}</h3>
 				<p>{description}</p>
 				<p className={styles.learnMore}>
-					<a href='#contact'>Learn More</a>
+					<a onClick={handleLearnMoreClick}>Learn More</a>
 				</p>
 			</div>
 		</div>
